@@ -29,6 +29,7 @@ public class AptController {
 
     private final AptService aptService;
 
+    // 활용 공공 데이터 : https://www.data.go.kr/data/15063991/fileData.do#tab-layer-openapi
     @GetMapping("/list")
     @Operation(summary = "아파트 목록 조회 요청",
             description = "## Specs\n - Secured to: { }",
