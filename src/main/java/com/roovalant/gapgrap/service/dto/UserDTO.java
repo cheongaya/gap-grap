@@ -14,7 +14,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class AptDTO implements Serializable {
+public class UserDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -32,11 +32,11 @@ public class AptDTO implements Serializable {
     private String name;
 
     /**
-     * address: 주소
+     * nickname: 닉네임
      */
-    @Size(max = 16_777_215)
-    @Schema(description = "주소")
-    private String address;
+    @Size(max = 255)
+    @Schema(description = "닉네임")
+    private String nickname;
 
     @Override
     public String toString() {
