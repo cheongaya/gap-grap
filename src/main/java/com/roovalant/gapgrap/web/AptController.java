@@ -1,13 +1,9 @@
 package com.roovalant.gapgrap.web;
 
-import com.roovalant.gapgrap.config.OpenApiConfig;
+import com.roovalant.gapgrap.domain.enumeration.ResourceType;
 import com.roovalant.gapgrap.service.AptService;
 import com.roovalant.gapgrap.service.dto.AptDTO;
 import com.roovalant.gapgrap.service.util.PaginationUtil;
-import com.roovalant.gapgrap.web.vm.PaginationVM;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.api.annotations.ParameterObject;
@@ -19,9 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.List;
-import java.util.Map;
-
-import static com.roovalant.gapgrap.config.HeaderConstants.GAPGRAP_AUTHORIZATION;
 
 @Slf4j
 @RequiredArgsConstructor
