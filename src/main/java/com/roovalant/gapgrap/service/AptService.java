@@ -1,20 +1,27 @@
 package com.roovalant.gapgrap.service;
 
+import com.roovalant.gapgrap.domain.enumeration.ResourceType;
 import com.roovalant.gapgrap.service.dto.AptDTO;
-import com.roovalant.gapgrap.web.vm.PaginationVM;
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-import java.util.Map;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface AptService {
 
     /**
-     * Get all the Apts.
+     * Get all the apts.
      *
-     * @param pagination the pagination information
-     * @param filters the filters to retrieve
-     * @return the list of entities
+     * @param pageable the pagination information.
+     * @return the list of entities.
      */
-    ResponseEntity<List<AptDTO>> getAllApts(PaginationVM pagination, Map<String,String> filters, String authorization);
+    Page<AptDTO> findAll(Pageable pageable);
+
+    /**
+     * Get all the apts.
+     *
+     * @param pageable the pagination information.
+     * @param type the type of resource..
+     * @return the list of entities.
+     */
+    Page<AptDTO> findAllByType(Pageable pageable, ResourceType type);
+
 }
