@@ -5,7 +5,7 @@ import com.roovalant.gapgrap.service.dto.AptDTO;
 
 @Mapper(componentModel = "spring", uses = {
 }, nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
-public class AptMapper extends EntityMapper<AptDTO, Apt> {
+public interface AptMapper extends EntityMapper<AptDTO, Apt> {
 
     AptDTO toDto(Apt entity);
 

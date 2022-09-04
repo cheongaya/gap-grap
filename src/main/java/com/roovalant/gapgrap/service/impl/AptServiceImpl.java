@@ -4,6 +4,7 @@ import com.roovalant.gapgrap.domain.enumeration.ResourceType;
 import com.roovalant.gapgrap.repository.AptRepository;
 import com.roovalant.gapgrap.service.AptService;
 import com.roovalant.gapgrap.service.dto.AptDTO;
+import com.roovalant.gapgrap.service.mapper.AptMapper;
 import com.roovalant.gapgrap.service.util.PaginationUtil;
 import com.roovalant.gapgrap.service.util.UriUtil;
 import com.roovalant.gapgrap.web.vm.PaginationVM;
