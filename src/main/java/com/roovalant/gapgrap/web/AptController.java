@@ -23,6 +23,7 @@ import java.util.List;
 public class AptController {
 
     private final AptService aptService;
+    private final UserService userService;
 
     // 활용 공공 데이터 : https://www.data.go.kr/data/15063991/fileData.do#tab-layer-openapi
 //    @GetMapping("/list")
