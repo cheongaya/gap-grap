@@ -2,6 +2,7 @@ package com.roovalant.gapgrap.web;
 
 import com.roovalant.gapgrap.domain.enumeration.ResourceType;
 import com.roovalant.gapgrap.service.AptService;
+import com.roovalant.gapgrap.service.UserService;
 import com.roovalant.gapgrap.service.dto.AptDTO;
 import com.roovalant.gapgrap.service.util.PaginationUtil;
 import lombok.RequiredArgsConstructor;
