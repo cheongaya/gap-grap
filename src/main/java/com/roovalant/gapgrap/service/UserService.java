@@ -1,6 +1,8 @@
 package com.roovalant.gapgrap.service;
 
 import com.roovalant.gapgrap.domain.enumeration.ResourceType;
+import com.roovalant.gapgrap.service.dto.UserDTO;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface UserService {
