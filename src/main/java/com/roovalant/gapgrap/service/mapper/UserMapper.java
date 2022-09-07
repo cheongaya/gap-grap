@@ -3,6 +3,8 @@ package com.roovalant.gapgrap.service.mapper;
 import com.roovalant.gapgrap.domain.Apt;
 import com.roovalant.gapgrap.domain.User;
 import com.roovalant.gapgrap.service.dto.UserDTO;
+import org.mapstruct.Mapper;
+import org.mapstruct.NullValueCheckStrategy;
 
 @Mapper(componentModel = "spring", uses = {
 }, nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)

@@ -1,13 +1,9 @@
 package com.roovalant.gapgrap.service.impl;
 
 import com.roovalant.gapgrap.domain.enumeration.ResourceType;
-import com.roovalant.gapgrap.repository.AptRepository;
 import com.roovalant.gapgrap.repository.UserRepository;
-import com.roovalant.gapgrap.service.AptService;
 import com.roovalant.gapgrap.service.UserService;
-import com.roovalant.gapgrap.service.dto.AptDTO;
 import com.roovalant.gapgrap.service.dto.UserDTO;
-import com.roovalant.gapgrap.service.mapper.AptMapper;
 import com.roovalant.gapgrap.service.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,6 +26,11 @@ public class UserServiceImpl implements UserService {
     public Page<UserDTO> findAll(Pageable pageable) {
         log.debug("Request to get all Apts");
         return userRepository.findAll(pageable).map(userMapper::toDto);
+    }
+
+    @Override
+    public Page<UserDTO> findAllByType(Pageable pageable, ResourceType type) {
+        return null;
     }
 
 }
