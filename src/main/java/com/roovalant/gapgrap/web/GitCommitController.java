@@ -24,5 +24,6 @@ public class GitCommitController {
             @PathParam("user-name") @RequestParam String userName) {
 
 //        return gitCommitService.getGitCommitHistory(userName);
+        return ResponseEntity.ok("");
     }
 }
