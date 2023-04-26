@@ -1,4 +1,4 @@
-package com.roovalant.gapgrap.web;
+package com.roovalant.gapgrap.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +19,7 @@ public class HelloController {
 
     @GetMapping("error")
     public String error(Model model) {
-        model.addAttribute("data", 500);
+        model.addAttribute("error", 500);
         return "error"; // 리턴 값은 = /resources/templates 폴더 내 파일 이름
     }
 

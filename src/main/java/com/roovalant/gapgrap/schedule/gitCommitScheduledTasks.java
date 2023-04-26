@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 @RequiredArgsConstructor
-public class GitCommitScheduledTasks {
+class GitCommitScheduledTasks {
 
     private final GitCommitService gitCommitService;
 
-    @Scheduled(fixedRate = 1000 * 10)
-    public void getGitCommitData() {
-        gitCommitService.getGitCommits();
-    }
+//    @Scheduled(fixedRate = 1000 * 10)
+//    public void getGitCommitData() {
+//        gitCommitService.getGitCommits();
+//    }
 }

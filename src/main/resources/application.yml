@@ -1,7 +1,7 @@
 server:
   port: ${PORT:8090}
 
-# API URL : http://localhost:8090/swagger-ui/index.html
+## API URL : http://localhost:8090/swagger-ui/index.html
 springdoc:
   api-docs:
     groups:
@@ -10,3 +10,22 @@ springdoc:
     path: /swagger-ui.html
     displayRequestDuration: true
     groups-order: DESC
+
+## H2
+#spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/test
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+
+## JPA
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    driver-class-name: org.h2.Driver
+    username: sa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
