@@ -1,7 +1,7 @@
 package com.roovalant.gapgrap.tdd.money;
 
 public class Dollar {
-    int amount;
+    private int amount;
     Dollar(int amount) {
         this.amount = amount;
     }

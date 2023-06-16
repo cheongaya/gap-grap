@@ -30,9 +30,16 @@ public class DollarTest {
          */
         Dollar five = new Dollar(5);
         Dollar product = five.times(2);
-        assertEquals(10, product.amount);
+//        assertEquals(10, product.amount); // Dollar 클래스의 amount 접근제어자를 private 로 바꿔서 에러남
         product = five.times(3);
-        assertEquals(15, product.amount);
+//        assertEquals(15, product.amount); // Dollar 클래스의 amount 접근제어자를 private 로 바꿔서 에러남
+
+        /**
+         * 위의 코드를, Dollar 와 Dollar 끼리 비교할 수 있게 코드 변경하기
+         */
+        Dollar five2 = new Dollar(5);
+        assertEquals(new Dollar(10), five2.times(2));
+        assertEquals(new Dollar(15), five2.times(3));
     }
 
     @Test
