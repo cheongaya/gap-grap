@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DollarTest {
 
@@ -25,10 +26,18 @@ public class DollarTest {
 //        five.times(3);
 //        assertEquals(15, five.amount); // 위의 10 에서 * 3 이 되니까 30 이 나옴!
 
+        /**
+         * 하나의 Dollar 객체에 곱하기를 두번 수행할 수 있게 하기
+         */
         Dollar five = new Dollar(5);
         Dollar product = five.times(2);
         assertEquals(10, product.amount);
         product = five.times(3);
         assertEquals(15, product.amount);
+    }
+
+    @Test
+    public void testEquality() {
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
     }
 }
