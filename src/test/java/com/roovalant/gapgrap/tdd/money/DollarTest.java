@@ -21,6 +21,6 @@ public class DollarTest {
          */
         Dollar five = new Dollar(5);
         five.times(2);
-        assertEquals(10, five.amount); // five.amount 는 0이 나옴
+        assertEquals(10, five.amount);
     }
 }
