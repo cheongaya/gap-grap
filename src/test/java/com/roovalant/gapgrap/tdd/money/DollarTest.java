@@ -19,8 +19,16 @@ public class DollarTest {
          * 3. times(int) 메서드가 없음
          * 4. amount 필드가 없음
          */
+//        Dollar five = new Dollar(5);
+//        five.times(2);
+//        assertEquals(10, five.amount); // 여기서 amount 가 10 이 됨!
+//        five.times(3);
+//        assertEquals(15, five.amount); // 위의 10 에서 * 3 이 되니까 30 이 나옴!
+
         Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10, five.amount);
+        Dollar product = five.times(2);
+        assertEquals(10, product.amount);
+        product = five.times(3);
+        assertEquals(15, product.amount);
     }
 }
