@@ -44,8 +44,14 @@ public class DollarTest {
 
     @Test
     public void testEquality() {
+        // Dollar 끼리 비교하기
         assertTrue(new Dollar(5).equals(new Dollar(5)));
         assertFalse(new Dollar(5).equals(new Dollar(6)));
+        // Franc 끼리 비교하기
+        assertTrue(new Franc(5).equals(new Franc(5)));
+        assertFalse(new Franc(5).equals(new Franc(6)));
+        // Dollar 와 Franc 비교하기
+        assertFalse(new Franc(5).equals(new Dollar(5))); // False 가 나와야하는데 true 가 나온다
     }
 
     @Test
