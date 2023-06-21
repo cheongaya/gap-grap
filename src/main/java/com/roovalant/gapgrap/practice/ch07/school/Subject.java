@@ -13,9 +13,9 @@ public class Subject {
     // 수강 신청한 학생 리스트 (register() 메서드를 호출하면 리스트에 추가 됨)
     private ArrayList<Student> studentList = new ArrayList<>();
 
-    public Subject(int subjectId, String subjectName, int gradeType) {
-        this.subjectId = subjectId;
+    public Subject(String subjectName, int subjectId) {
         this.subjectName = subjectName;
+        this.subjectId = subjectId;
         this.gradeType = Define.AB_TYPE; // 기본적으로 A, B 타입
     }
 
@@ -46,5 +46,13 @@ public class Subject {
 
     public void setGradeType(int gradeType) {
         this.gradeType = gradeType;
+    }
+
+    public ArrayList<Student> getStudentList() {
+        return studentList;
+    }
+
+    public void setStudentList(ArrayList<Student> studentList) {
+        this.studentList = studentList;
     }
 }
