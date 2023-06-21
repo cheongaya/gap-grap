@@ -26,7 +26,7 @@ public class DollarTest {
         /**
          * 하나의 Dollar 객체에 곱하기를 두번 수행할 수 있게 하기
          */
-        Dollar five = new Dollar(5);
+//        Dollar five = new Dollar(5);
 //        Dollar product = five.times(2);
 //        assertEquals(10, product.amount); // Dollar 클래스의 amount 접근제어자를 private 로 바꿔서 에러남
 //        product = five.times(3);
@@ -35,9 +35,9 @@ public class DollarTest {
         /**
          * 위의 코드를, Dollar 와 Dollar 끼리 비교할 수 있게 코드 변경하기
          */
-        Dollar five2 = new Dollar(5);
-        assertEquals(new Dollar(10), five2.times(2));
-        assertEquals(new Dollar(15), five2.times(3));
+//        Dollar five2 = new Dollar(5);
+//        assertEquals(new Dollar(10), five2.times(2));
+//        assertEquals(new Dollar(15), five2.times(3));
 
         /**
          * 클라이언트에서 하위 클래스(Dollar, Franc)를 직접 참조하는 코드 없애기
@@ -51,13 +51,13 @@ public class DollarTest {
     @Test
     public void testEquality() {
         // Dollar 끼리 비교하기
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
+//        assertTrue(new Dollar(5).equals(new Dollar(5)));
+//        assertFalse(new Dollar(5).equals(new Dollar(6)));
         // Franc 끼리 비교하기
-        assertTrue(new Franc(5).equals(new Franc(5)));
-        assertFalse(new Franc(5).equals(new Franc(6)));
+//        assertTrue(new Franc(5).equals(new Franc(5)));
+//        assertFalse(new Franc(5).equals(new Franc(6)));
         // Dollar 와 Franc 비교하기
-        assertFalse(new Franc(5).equals(new Dollar(5))); // False 가 나와야하는데 true 가 나온다
+//        assertFalse(new Franc(5).equals(new Dollar(5))); // False 가 나와야하는데 true 가 나온다
 
 
         /**
@@ -73,9 +73,9 @@ public class DollarTest {
 
     @Test
     public void testFrancMultiplication() {
-        Franc five = new Franc(5);
-        assertEquals(new Franc(10), five.times(2));
-        assertEquals(new Franc(15), five.times(3));
+//        Franc five = new Franc(5);
+//        assertEquals(new Franc(10), five.times(2));
+//        assertEquals(new Franc(15), five.times(3));
 
         /**
          * 클라이언트에서 하위 클래스(Dollar, Franc)를 직접 참조하는 코드 없애기
