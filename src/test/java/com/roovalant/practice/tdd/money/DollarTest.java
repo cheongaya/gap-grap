@@ -84,4 +84,10 @@ public class DollarTest {
         assertEquals(Money.franc(10), five2.times(2));
         assertEquals(Money.franc(15), five2.times(3));
     }
+
+    @Test
+    public void testCurrency() {
+        assertEquals("USD", Money.dollar(1).currency());
+        assertEquals("CHF", Money.franc(1).currency());
+    }
 }

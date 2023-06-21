@@ -1,8 +1,11 @@
 package com.roovalant.practice.tdd.money;
 
 public class Dollar extends Money {
+
+    private String currency;
     Dollar(int amount) {
         this.amount = amount;
+        currency = "USD";
     }
 
 //    Dollar times(int multiplier) {
