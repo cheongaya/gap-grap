@@ -4,6 +4,11 @@ public abstract class Money {
     protected int amount; // 하위 클래스에서도 변수를 볼 수 있도록 private -> protected 로 변경
     protected String currency;
 
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
     static Money dollar(int amount) {
         return new Dollar(amount, "USD");
     }
