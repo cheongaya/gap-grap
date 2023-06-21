@@ -2,7 +2,6 @@ package com.roovalant.practice.tdd.money;
 
 public class Dollar extends Money {
 
-    private String currency;
     Dollar(int amount, String currency) {
         super(amount, currency);
     }
@@ -16,10 +15,6 @@ public class Dollar extends Money {
 //
 //        return new Dollar(amount * multiplier);
 //    }
-
-    Money times(int multiplier) {
-        return Money.dollar(amount * multiplier);
-    }
 
 //    @Override
 //    public boolean equals(Object obj) {

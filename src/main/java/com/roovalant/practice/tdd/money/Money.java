@@ -1,6 +1,6 @@
 package com.roovalant.practice.tdd.money;
 
-public abstract class Money {
+public class Money {
     protected int amount; // 하위 클래스에서도 변수를 볼 수 있도록 private -> protected 로 변경
     protected String currency;
 
@@ -17,7 +17,9 @@ public abstract class Money {
         return new Franc(amount, "CHF");
     }
 
-    abstract Money times(int multiplier);
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
+    }
 
     String currency(){
         return currency;
@@ -28,7 +30,17 @@ public abstract class Money {
         Money money = (Money) obj;
         System.out.println("getClass() : " + getClass());
         System.out.println("money.getClass() : " + money.getClass());
+//        return amount == money.amount
+//                && getClass().equals(money.getClass());
         return amount == money.amount
-                && getClass().equals(money.getClass());
+                && currency().equals(money.currency());
+    }
+
+    @Override
+    public String toString() {
+        return "Money{" +
+                "amount=" + amount +
+                ", currency='" + currency + '\'' +
+                '}';
     }
 }
