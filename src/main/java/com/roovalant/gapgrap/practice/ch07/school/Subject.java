@@ -1,7 +1,6 @@
-package com.roovalant.gapgrap.practice.ch07;
+package com.roovalant.gapgrap.practice.ch07.school;
 
 import com.roovalant.gapgrap.practice.ch07.utils.Define;
-import net.bytebuddy.implementation.bytecode.collection.ArrayLength;
 
 import java.util.ArrayList;
 
