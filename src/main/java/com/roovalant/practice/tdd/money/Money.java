@@ -1,4 +1,4 @@
-package com.roovalant.gapgrap.tdd.money;
+package com.roovalant.practice.tdd.money;
 
 public class Money {
     protected int amount; // 하위 클래스에서도 변수를 볼 수 있도록 private -> protected 로 변경

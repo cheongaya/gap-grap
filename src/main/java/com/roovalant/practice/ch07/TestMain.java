@@ -1,11 +1,11 @@
-package com.roovalant.gapgrap.practice.ch07;
+package com.roovalant.practice.ch07;
 
-import com.roovalant.gapgrap.practice.ch07.school.School;
-import com.roovalant.gapgrap.practice.ch07.school.Score;
-import com.roovalant.gapgrap.practice.ch07.school.Student;
-import com.roovalant.gapgrap.practice.ch07.school.Subject;
-import com.roovalant.gapgrap.practice.ch07.school.report.GenerateGradeReport;
-import com.roovalant.gapgrap.practice.ch07.utils.Define;
+import com.roovalant.practice.ch07.school.School;
+import com.roovalant.practice.ch07.school.Score;
+import com.roovalant.practice.ch07.school.Student;
+import com.roovalant.practice.ch07.school.Subject;
+import com.roovalant.practice.ch07.school.report.GenerateGradeReport;
+import com.roovalant.practice.ch07.utils.Define;
 
 public class TestMain {
 

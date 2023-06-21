@@ -1,4 +1,4 @@
-package com.roovalant.gapgrap.practice.ch07.school;
+package com.roovalant.practice.ch07.school;
 
 import java.util.ArrayList;
 

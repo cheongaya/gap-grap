@@ -1,6 +1,6 @@
-package com.roovalant.gapgrap.practice.ch07.school;
+package com.roovalant.practice.ch07.school;
 
-import com.roovalant.gapgrap.practice.ch07.utils.Define;
+import com.roovalant.practice.ch07.utils.Define;
 
 import java.util.ArrayList;
 

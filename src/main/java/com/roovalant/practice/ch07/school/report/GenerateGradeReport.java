@@ -1,14 +1,14 @@
-package com.roovalant.gapgrap.practice.ch07.school.report;
+package com.roovalant.practice.ch07.school.report;
 
-import com.roovalant.gapgrap.practice.ch07.grade.BasicEvaluation;
-import com.roovalant.gapgrap.practice.ch07.grade.GradeEvaluation;
-import com.roovalant.gapgrap.practice.ch07.grade.MajorEvaluation;
-import com.roovalant.gapgrap.practice.ch07.grade.PassFailEvaluation;
-import com.roovalant.gapgrap.practice.ch07.school.School;
-import com.roovalant.gapgrap.practice.ch07.school.Score;
-import com.roovalant.gapgrap.practice.ch07.school.Student;
-import com.roovalant.gapgrap.practice.ch07.school.Subject;
-import com.roovalant.gapgrap.practice.ch07.utils.Define;
+import com.roovalant.practice.ch07.grade.BasicEvaluation;
+import com.roovalant.practice.ch07.grade.GradeEvaluation;
+import com.roovalant.practice.ch07.grade.MajorEvaluation;
+import com.roovalant.practice.ch07.grade.PassFailEvaluation;
+import com.roovalant.practice.ch07.school.School;
+import com.roovalant.practice.ch07.school.Score;
+import com.roovalant.practice.ch07.school.Student;
+import com.roovalant.practice.ch07.school.Subject;
+import com.roovalant.practice.ch07.utils.Define;
 
 import java.util.ArrayList;
 

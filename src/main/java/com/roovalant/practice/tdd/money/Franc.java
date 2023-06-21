@@ -1,4 +1,4 @@
-package com.roovalant.gapgrap.tdd.money;
+package com.roovalant.practice.tdd.money;
 
 public class Franc extends Money {
     Franc(int amount) {

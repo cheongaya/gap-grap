@@ -1,4 +1,4 @@
-package com.roovalant.gapgrap.practice.ch07.utils;
+package com.roovalant.practice.ch07.utils;
 
 public class Define {
     public static final int KOREAN = 1001; // 국어
