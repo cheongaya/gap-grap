@@ -21,6 +21,10 @@ public class Money {
         return new Money(amount * multiplier, currency);
     }
 
+    Money plus(Money added) {
+        return new Money(amount + added.amount, currency);
+    }
+
     String currency(){
         return currency;
     }
