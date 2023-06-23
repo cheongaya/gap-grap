@@ -1,6 +1,8 @@
 package com.roovalant.practice.tdd.money;
 
-public class Money {
+import org.aspectj.weaver.ast.Expr;
+
+public class Money implements Expression {
     protected int amount; // 하위 클래스에서도 변수를 볼 수 있도록 private -> protected 로 변경
     protected String currency;
 
