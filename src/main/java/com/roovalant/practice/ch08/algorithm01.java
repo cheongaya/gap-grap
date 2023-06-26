@@ -30,6 +30,7 @@ public class algorithm01 {
         int minPos = 0;
         int maxPos = 0;
 
+        // 왜 int i=1 부터 시작할까? numbers[0] 은 10 이라는 걸 아니까, numbers[1] 부터 돌린다
         for (int i=1; i<numbers.length; i++) {
 
             if (min > numbers[i]) {
